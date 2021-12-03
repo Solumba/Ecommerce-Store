@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {Products, NavBar} from './components';
+import {Products, NavBar, Cart} from './components';
 import {commerce} from './lib/commerce';
 
 const App = () => {
@@ -34,7 +34,8 @@ const App = () => {
     return (
         <div>
             <NavBar totalItems = {cart.total_items} />
-            <Products products = {products} onAddToCart = {addToCartHandler}/>
+            {/* <Products products = {products} onAddToCart = {addToCartHandler}/> */}
+            <Cart cart ={cart}/>
         </div>
     )
 }

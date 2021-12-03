@@ -12,7 +12,7 @@ const NavBar = ({totalItems}) => {
                 <Toolbar>
                     <Typography>
                         <img src={logo} alt="Barter Commerce" height="25px" className={classes.image} />
-                        TECH STORE
+                        BarterTech
                     </Typography>
                     <div className={classes.grow}/>
                     <div className={classes.button}>
